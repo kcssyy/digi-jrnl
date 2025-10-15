@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio 🌸</title>
+  <style>
+    body {
+      background-color: #ffecf4;
+      font-family: 'Quicksand', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffd9e8;
+      border-bottom: 3px solid #ffc0cb;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(255,182,193,0.3);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #cc5f7a;
+    }
+
+    nav {
+      background-color: #ffe6ef;
+      padding: 0.6rem;
+      border-bottom: 2px dashed #ffc0cb;
+      text-align: center;
+    }
+
+    nav a {
+      color: #cc5f7a;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      border-radius: 20px;
+      background: #fffafc;
+      padding: 0.4rem 0.8rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #ffd1dc;
+      color: #fff;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 2rem auto;
+      background-color: #ffffff;
+      border: 3px solid #ffc0cb;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(255,182,193,0.2);
+    }
+
+    .sidebar {
+      flex: 1 1 250px;
+      text-align: center;
+      border-right: 2px dotted #ffc0cb;
+      padding-right: 1rem;
+      margin-right: 1rem;
+    }
+
+    .sidebar img {
+      width: 100%;
+      border-radius: 12px;
+      border: 2px solid #ffc0cb;
+    }
+
+    .sidebar h2 {
+      color: #cc5f7a;
+      margin-top: 1rem;
+    }
+
+    .sidebar p {
+      color: #555;
+    }
+
+    .content {
+      flex: 2 1 600px;
+    }
+
+    section {
+      margin-bottom: 1.5rem;
+      background: #fff9fb;
+      border: 2px dashed #ffd1dc;
+      border-radius: 15px;
+      padding: 1rem;
+    }
+
+    h3 {
+      color: #cc5f7a;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    /* Skills clickable pills with tooltips */
+    .skills a {
+      display: inline-block;
+      background-color: #ffeaf0;
+      border: 1px solid #ffc0cb;
+      border-radius: 10px;
+      padding: 0.4rem 0.7rem;
+      margin: 0.3rem;
+      font-size: 0.9rem;
+      box-shadow: 1px 1px 3px rgba(255,192,203,0.3);
+      color: #ff69b4;
+      text-decoration: none;
+      position: relative;
+      font-family: 'Quicksand', sans-serif;
+      transition: transform 0.2s;
+    }
+
+    .skills a:hover {
+      transform: translateY(-3px);
+    }
+
+    /* Tooltip styling */
+    .skills a::after {
+      content: attr(data-info);
+      position: absolute;
+      bottom: 120%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ffc0cb;
+      color: #fff;
+      font-size: 0.8rem;
+      padding: 5px 8px;
+      border-radius: 12px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .skills a:hover::after {
+      opacity: 1;
+    }
+
+    .projects span {
+      display: inline-block;
+      background-color: #ffeaf0;
+      border: 1px solid #ffc0cb;
+      border-radius: 10px;
+      padding: 0.4rem 0.7rem;
+      margin: 0.3rem;
+      font-size: 0.9rem;
+      box-shadow: 1px 1px 3px rgba(255,192,203,0.3);
+    }
+
+    .projects span::before {
+      content: '💻 ';
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #ffd9e8;
+      border-top: 2px solid #ffc0cb;
+      margin-top: 2rem;
+      border-radius: 10px 10px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌷 MAAGAD, Kristina Cassandra 🌷</h1>
+    <p>a second year comscie girlypop 💕</p>
+  </header>
+
+  <nav>
+    <a href="http://127.0.0.1:5500/Proj/index.html">💖 Home </a>
+    <a href="http://127.0.0.1:5500/Proj/Archives.html">💌 Archive </a>
+    <a href="http://127.0.0.1:5500/Proj/Diary.html">📞 Unsaid Letters </a>
+    <a href="http://127.0.0.1:5500/Proj/poem.html">🍥 Poem </a>
+  </nav>
+
+  <main>
+    <div class="sidebar">
+      <img src="kc-portfolio.jpg" alt="kc">
+      <h2>🌼 Kristina Cassandra Maagad</h2>
+      <p>📍 Laguna, Philippines</p>
+      <p>i got a big forehead cuz i be knowin </p>
+    </div>
+
+    <div class="content">
+      <section id="about">
+        <h3>abt me ☆⋆｡𖦹🖇️°‧★‧</h3>
+        <p>Hello! I’m Kristina, 20 — a second-year college student in the Philippines. I dance through life in colors and textures — finding joy in makeup brushes, carefully styled outfits, and little sparkling accessories. I chase melodies of every kind — capturing moments in selfies and weaving them into the story of me🌷.</p>
+      </section>
+
+      <section id="skills">
+        <h3> for keeps </h3>
+        <div class="skills">
+          <a href="https://www.tiktok.com/@eternallybangtan/video/7530294215935397128?is_from_webapp=1&sender_device=pc&web_id=7523237457061086727" target="_blank" data-info="my first love"> 🐻 </a>
+          <a href="https://open.spotify.com/track/2mdEsXPu8ZmkHRRtAdC09e?si=a228c1ea898a43cd" target="_blank" data-info="cinnamon girl - lana">🩰</a>
+          <a href="https://open.spotify.com/playlist/7rJhPG7T28BJSwfBcQsoBI?si=Hnsgt0nqRnKLyRQgZFmDMw" target="_blank" data-info="fav pp"> 💌 </a>
+        </div>
+      </section>
+
+ <section id="gallery-playlist">
+  <h3>memories & melodies 🎞️💗</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
+    
+    <!-- Gallery -->
+    <div style="flex: 1 1 300px; background:#fff9fb; border:2px dashed #ffd1dc; border-radius:15px; padding:1rem; text-align:center;">
+      <h4 style="color:#cc5f7a;">film roll ✿</h4>
+      <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:0.6rem; justify-items:center;">
+        <img src="pic1.jpg" alt="me1" style="width:85%; border-radius:12px; border:2px solid #ffc0cb;">
+        <img src="pic2.jpg" alt="me2" style="width:85%; border-radius:12px; border:2px solid #ffc0cb;">
+        <img src="pic3.jpg" alt="me3" style="width:85%; border-radius:12px; border:2px solid #ffc0cb;">
+        <img src="pic4.jpg" alt="me4" style="width:85%; border-radius:12px; border:2px solid #ffc0cb;">
+      </div>
+      <p style="font-size:0.9rem; color:#cc5f7a; margin-top:0.7rem;"> fave snippets 🌸</p>
+    </div>
+
+    <!-- Playlist -->
+    <div style="flex: 1 1 320px; background:#fff9fb; border:2px dashed #ffd1dc; border-radius:15px; padding:1rem; text-align:center;">
+      <h4 style="color:#cc5f7a;">now playing 🎧</h4>
+      <iframe style="border-radius:12px;" 
+        src="https://open.spotify.com/embed/playlist/7rJhPG7T28BJSwfBcQsoBI?utm_source=generator" 
+        width="100%" height="280" frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+      </iframe>
+      <p style="font-size:0.9rem; color:#cc5f7a; margin-top:0.7rem;"> what a curse it is to be a lover girl ☁️</p>
+    </div>
+
+  </div>
+</section>
+
+
+      <section id="contact">
+        <h3>Contact 💌</h3>
+        <p>📧 Email: <a href="mailto:kriscass18@gmail.com">kriscass18@gmail.com</a></p>
+        <p>🐙 GitHub: <a href="https://github.com/kcssyy" target="_blank">https://github.com/kcssyy</a></p>
+        <p>📘 Facebook: <a href="https://www.facebook.com/kcsssy18/" target="_blank">https://www.facebook.com/kcsssy18/</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>🌷 2025 officialKC | All Rights Reserved 🌷</p>
+  </footer>
+</body>
+</html>
